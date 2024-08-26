@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.nuxeo</groupId>
+    <artifactId>nuxeo-parent</artifactId>
+    <version>2025.0.22</version>
+  </parent>
+
+  <groupId>org.nuxeo.ecm.platform</groupId>
+  <artifactId>nuxeo-rest-api-doc-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>2025.0-SNAPSHOT</version>
+  <name>Nuxeo Rest API Swagger Documentation Parent</name>
+
+  <modules>
+    <module>nuxeo-rest-api-doc</module>
+    <module>package</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-rest-api-doc</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/nuxeo/nuxeo-rest-api-swagger-doc.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/nuxeo/nuxeo-rest-api-swagger-doc.git</developerConnection>
+    <url>https://github.com/nuxeo/nuxeo-rest-api-swagger-doc</url>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>public</id>
+      <url>https://packages.nuxeo.com/repository/maven-public</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>maven-internal</id>
+      <url>https://packages.nuxeo.com/repository/maven-internal/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <updatePolicy>always</updatePolicy>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>public</id>
+      <url>https://packages.nuxeo.com/repository/maven-public</url>
+      <name>Nuxeo</name>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <!-- no need to enable snapshots for plugin repository -->
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>
