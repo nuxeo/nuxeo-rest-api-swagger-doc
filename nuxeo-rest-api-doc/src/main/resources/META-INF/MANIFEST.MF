@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 1
+Bundle-Name: nuxeo-rest-api-swagger-doc
+Bundle-SymbolicName: org.nuxeo.ecm.platform.restapi.server.doc;singleton:=true
+Fragment-Host: org.nuxeo.ecm.platform.restapi.server
+Bundle-Vendor: Nuxeo
+Bundle-Version: 1.0.0
+Nuxeo-Component: OSGI-INF/auth-contrib.xml
+Nuxeo-AllowOverride: true
