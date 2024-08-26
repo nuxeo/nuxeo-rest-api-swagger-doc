@@ -1,0 +1,21 @@
+<!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
+<package type="addon" name="nuxeo-rest-api-documentation" version="@VERSION@">
+  <title>Nuxeo Rest Api Swagger Documentation</title>
+  <description>
+    <p>The Nuxeo Swagger Rest API Documentation is out-of-date and no longer maintained.</p>
+  </description>
+  <home-page>https://doc.nuxeo.com/rest-api/</home-page>
+  <vendor>Nuxeo</vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <nuxeo-validation>none</nuxeo-validation>
+  <production-state>testing</production-state>
+  <supported>false</supported>
+  <target-platform>
+    <name>@DISTRIBUTION_NAME@</name>
+    <version>[@NUXEO_PLATFORM_VERSION@,)</version>
+  </target-platform>
+  <license></license>
+  <license-url></license-url>
+  <visibility>DEV</visibility>
+</package>
