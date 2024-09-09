@@ -7,17 +7,17 @@
 
   <link href="${skinPath}/css/highlight.default.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="${skinPath}/css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="${skinPath}/lib/shred.bundle.nx.js"></script>
-  <script src="${skinPath}/lib/jquery-1.8.0.min.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/jquery.slideto.min.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/jquery.wiggle.min.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/jquery.ba-bbq.min.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/handlebars-1.0.0.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/underscore-min.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/backbone-min.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/swagger.js" type="text/javascript"></script>
-  <script src="${skinPath}/swagger-ui.js" type="text/javascript"></script>
-  <script src="${skinPath}/lib/highlight.7.3.pack.js" type="text/javascript"></script>
+  <script type="text/javascript" src="${skinPath}/lib/shred.bundle.nx.js"nonce="dummy"></script>
+  <script src="${skinPath}/lib/jquery-1.8.0.min.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/jquery.slideto.min.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/jquery.wiggle.min.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/jquery.ba-bbq.min.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/handlebars-1.0.0.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/underscore-min.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/backbone-min.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/swagger.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/swagger-ui.js" type="text/javascript"nonce="dummy"></script>
+  <script src="${skinPath}/lib/highlight.7.3.pack.js" type="text/javascript"nonce="dummy"></script>
 
     <script type="text/javascript">
   $(function () {
