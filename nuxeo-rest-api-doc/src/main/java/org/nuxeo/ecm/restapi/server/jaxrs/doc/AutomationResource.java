@@ -1,5 +1,5 @@
 /*
- * (C) Copyright 2013 Nuxeo SA (http://nuxeo.com/) and others.
+ * (C) Copyright 2014 Nuxeo SA (http://nuxeo.com/) and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,34 +14,26 @@
  * limitations under the License.
  *
  * Contributors:
- *     dmetzler
+ *     bstefanescu
+ *     vpasquier <vpasquier@nuxeo.com>
  */
 package org.nuxeo.ecm.restapi.server.jaxrs.doc;
 
-import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
 
-import org.nuxeo.ecm.webengine.model.Template;
 import org.nuxeo.ecm.webengine.model.WebObject;
 import org.nuxeo.ecm.webengine.model.impl.AbstractResource;
 import org.nuxeo.ecm.webengine.model.impl.ResourceTypeImpl;
 
 /**
- * @since 5.8
+ * @author <a href="mailto:bs@nuxeo.com">Bogdan Stefanescu</a>
  */
-@WebObject(type = "doc")
-public class DocObject extends AbstractResource<ResourceTypeImpl> {
+@WebObject(type = "automation")
+public class AutomationResource extends AbstractResource<ResourceTypeImpl>  {
 
-    @GET
-    public Template doGet() {
-        return getView("index");
-    }
-
-    @GET
-    @Path("{resource}.json")
-    public Template doGetResource(@PathParam("resource") String resource) {
-        return getView(resource).arg("resource", resource);
+    @Path("/doc")
+    public Object getDocPage() {
+        return newObject("automationDoc");
     }
 
 }
