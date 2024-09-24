@@ -13,7 +13,7 @@
   <supported>false</supported>
   <target-platform>
     <name>@DISTRIBUTION_NAME@</name>
-    <version>[@NUXEO_PLATFORM_VERSION@,)</version>
+    <version>[@NUXEO_PLATFORM_VERSION@,2024)</version>
   </target-platform>
   <license></license>
   <license-url></license-url>
