@@ -9,7 +9,7 @@
   <groupId>org.nuxeo.ecm.platform</groupId>
   <artifactId>nuxeo-rest-api-doc-parent</artifactId>
   <packaging>pom</packaging>
-  <version>2023.0-SNAPSHOT</version>
+  <version>2023.0</version>
   <name>Nuxeo Rest API Swagger Documentation Parent</name>
 
   <modules>
