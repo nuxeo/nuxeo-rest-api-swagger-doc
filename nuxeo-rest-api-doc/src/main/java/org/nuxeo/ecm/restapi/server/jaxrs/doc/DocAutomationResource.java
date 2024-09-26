@@ -21,15 +21,14 @@ package org.nuxeo.ecm.restapi.server.jaxrs.doc;
 
 import jakarta.ws.rs.Path;
 
+import org.nuxeo.ecm.automation.server.rest.AutomationResource;
 import org.nuxeo.ecm.webengine.model.WebObject;
-import org.nuxeo.ecm.webengine.model.impl.AbstractResource;
-import org.nuxeo.ecm.webengine.model.impl.ResourceTypeImpl;
 
 /**
  * @author <a href="mailto:bs@nuxeo.com">Bogdan Stefanescu</a>
  */
 @WebObject(type = "automation")
-public class AutomationResource extends AbstractResource<ResourceTypeImpl>  {
+public class DocAutomationResource extends AutomationResource  {
 
     @Path("/doc")
     public Object getDocPage() {
