@@ -14,17 +14,17 @@ Then create a temporary branch to perform the release:
 git checkout -b tmp-release
 ```
 
-Then update the project version to final, for instance `2021.1`:
+Then update the project version to final, for instance `2021.2`:
 
 ```bash
-mvn versions:set -DnewVersion=2021.1 -DgenerateBackupPoms=false
+mvn versions:set -DnewVersion=2021.2 -DgenerateBackupPoms=false
 ```
 
 Then commit and tag the release:
 
 ```bash
-git commit -a -m "Release 2021.1"
-git tag -a -m "Release 2021.1" v2021.1
+git commit -a -m "Release 2021.2"
+git tag -a -m "Release 2021.2" v2021.2
 ```
 
 Then deploy the maven artifacts:
@@ -55,7 +55,7 @@ Then cleanup your branch and prepare the next development iteration:
 ```bash
 git checkout 2021
 git branch -D tmp-release
-mvn versions:set -DnewVersion=2021.2-SNAPSHOT -DgenerateBackupPoms=false
-git commit -a -m "Post release 2021.1"
+mvn versions:set -DnewVersion=2021.3-SNAPSHOT -DgenerateBackupPoms=false
+git commit -a -m "Post release 2021.2"
 git push
 ```
